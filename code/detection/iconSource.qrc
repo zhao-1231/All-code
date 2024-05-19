@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/breaklink.png</file>
+        <file>icons/eye.png</file>
+        <file>icons/hand.png</file>
+        <file>icons/link.png</file>
+        <file>icons/ruler.png</file>
+        <file>icons/Save.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/Tuner.png</file>
+        <file>icons/WindowSetting.png</file>
+        <file>icons/screenLock.png</file>
+        <file>icons/screenUnLock.png</file>
+        <file>icons/pause.png</file>
+        <file>icons/play.png</file>
+        <file>icons/setting1.png</file>
+        <file>icons/ram.png</file>
+        <file>icons/information.png</file>
+        <file>icons/defects.png</file>
+        <file>icons/measuring-tape.png</file>
+        <file>icons/radio-waves.png</file>
+    </qresource>
+</RCC>

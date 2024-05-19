@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GrascaleTunerDia</class>
+ <widget class="QDialog" name="GrascaleTunerDia">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QTextEdit" name="m_logger">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Group One</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout" columnstretch="0,4,0,0,4,1">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraA:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="m_G1CamAfft"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="m_G1CamAfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QSlider" name="m_G1CamASlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="m_G1CamAGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraB:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="m_G1CamBfft"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="m_G1CamBfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QSlider" name="m_G1CamBSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="m_G1CamBGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraC:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="m_G1CamCfft"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="m_G1CamCfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QSlider" name="m_G1CamCSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLineEdit" name="m_G1CamCGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraD:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="m_G1CamDfft"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="m_G1CamDfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QSlider" name="m_G1CamDSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLineEdit" name="m_G1CamDGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>858</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_G1ApplyBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Apply Settings</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Group Two</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,4,0,0,4,1">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraA:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="m_G2CamAfft"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="m_G2CamAfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_18">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QSlider" name="m_G2CamASlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="m_G2CamAGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraB:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="m_G2CamBfft"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="m_G2CamBfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_20">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QSlider" name="m_G2CamBSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="m_G2CamBGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraC:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="m_G2CamCfft"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="m_G2CamCfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="label_22">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QSlider" name="m_G2CamCSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLineEdit" name="m_G2CamCGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CameraD:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="m_G2CamDfft"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="m_G2CamDfftBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Pick</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(129, 129, 64);
+font: 12pt &quot;Arial&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Gain:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QSlider" name="m_G2CamDSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLineEdit" name="m_G2CamDGainVal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>29</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_SaveSettingsBtn">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Arial&quot;;
+background-color: rgb(204, 204, 0);
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Save Settings</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_LoadSettingsBtn">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Arial&quot;;
+background-color: rgb(0, 186, 90);
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Load Settings</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="m_G2ApplyBtn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(118, 118, 59);
+font: 12pt &quot;Arial&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Apply Settings</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>12</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
